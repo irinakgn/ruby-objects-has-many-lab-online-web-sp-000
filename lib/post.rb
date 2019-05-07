@@ -13,7 +13,7 @@ class Post
     @name
   end
 
-  def artist
-    @artist
+  def author
+    @author
   end
 end
