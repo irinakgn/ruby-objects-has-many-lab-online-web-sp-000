@@ -9,8 +9,8 @@ class Post
     self.authors.nil? ? nil : self.author.name
   end
 
-  def name
-    @name
+  def title
+    @title
   end
 
   def author
