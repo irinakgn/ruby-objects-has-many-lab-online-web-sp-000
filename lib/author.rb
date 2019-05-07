@@ -12,9 +12,9 @@ class Author
     @@all << self
   end
 
-  def add_song(song)
-    song.author = self
-    @posts << song
+  def add_song(post)
+    post.author = self
+    @posts << post
   end
 
   def add_post_by_name(name)
@@ -27,11 +27,11 @@ class Author
     return count
   end
 
-  def songs
-    @songs
+  def posts
+    @posts
   end
 
-  def add_song_with_name(name)
-    @songs << Song.new(name)
+  def add_post_with_title(name)
+    @songs << Post.new(name)
   end
 end
