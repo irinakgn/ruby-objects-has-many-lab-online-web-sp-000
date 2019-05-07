@@ -8,12 +8,12 @@ class Author
 
   def initialize(name)
     @name = name
-    @songs = []
+    @posts = []
     @@all << self
   end
 
   def add_song(song)
-    song.artist = self
+    song.author = self
     @songs << song
   end
 
@@ -23,7 +23,7 @@ class Author
 
   def self.song_count
     count = 0
-    @@all.each{ |artist| count += artist.songs.count }
+    @@all.each{ |author| count += author.posts.count }
     return count
   end
 
