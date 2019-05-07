@@ -7,6 +7,10 @@ class Post
     @@all << self
   end
 
+  def self.all
+    return @@all
+  end
+
   def author_name
     self.author.nil? ? nil : self.author.name
   end
