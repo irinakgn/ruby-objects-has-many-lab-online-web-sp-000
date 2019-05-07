@@ -12,7 +12,7 @@ class Author
     @@all << self
   end
 
-  def add_song(post)
+  def add_post(post)
     post.author = self
     @posts << post
   end
