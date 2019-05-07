@@ -21,7 +21,6 @@ class Artist
     count = 0
     @@all.each{ |artist| count += artist.count }
     return count
-    @songs.count
   end
 
   def songs
