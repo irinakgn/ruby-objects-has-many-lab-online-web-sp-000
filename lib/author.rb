@@ -32,6 +32,6 @@ class Author
   end
 
   def add_post_with_title(name)
-    @songs << Post.new(name)
+    @posts << Post.new(name)
   end
 end
